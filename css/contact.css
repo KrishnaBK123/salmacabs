@@ -1,0 +1,582 @@
+.contact-section {
+    /* padding: 40px 0; */
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: 10;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--secondary-color);
+}
+
+.card-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.card-title {
+    
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.card-text {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.discount-badge {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--secondary-color);
+    z-index: 10;
+}
+
+.yellow-dot {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+    .contact-cards {
+        gap: 20px;
+    }
+    
+    .contact-card {
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .card-text {
+        font-size: 14px;
+    }
+    
+    .icon-container {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* contact form section  */
+
+.contact-section {
+    
+    position: relative;
+}
+
+ 
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.contact-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.image-container {
+    position: relative;
+    height: 100%;
+}
+
+.image-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--primary-color);
+    border-right: none;
+    z-index: 1;
+}
+
+.taxi-driver-img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 2;
+    transform: translate(15px, 15px);
+}
+
+.form-container {
+    background-color: #f7f5ee;
+    padding: 50px;
+    position: relative;
+    height: 100%;
+}
+
+.contact-header {
+    margin-bottom: 40px;
+}
+
+.contact-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.subtitle-dash {
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    background-color: var(--primary-color);
+}
+
+    .contact-title {
+        color: #777;
+        font-size: 14px;
+    }
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+
+.form-input::placeholder {
+    color: var(--text-secondary);
+}
+
+.form-input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+textarea.form-input {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e6bc00;
+}
+
+.triangle-decoration {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.top-right-triangle {
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+    opacity: 0.7;
+}
+
+.bottom-left-triangle {
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 100px 0 0 100px;
+    border-color: transparent transparent transparent var(--primary-color);
+    opacity: 0.7;
+}
+
+.circle-icon {
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.percentage-badge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.percentage-badge::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 992px) {
+    .contact-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .image-container {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    
+    .form-container {
+        padding: 40px 30px;
+    }
+/*     
+    .contact-title {
+        font-size: 36px;
+    } */
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 50px 0;
+    }
+    
+    .image-container {
+        height: 350px;
+    }
+    
+    .form-container {
+        padding: 30px 20px;
+    }
+/*     
+    .contact-title {
+        font-size: 32px;
+    } */
+    
+    .top-right-triangle {
+        border-width: 0 70px 70px 0;
+    }
+    
+    .bottom-left-triangle {
+        border-width: 70px 0 0 70px;
+    }
+    
+    .percentage-badge {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        height: 250px;
+    }
+    
+    .taxi-driver-img {
+        transform: translate(10px, 10px);
+    }
+    
+  
+    
+    .form-input {
+        padding: 12px;
+    }
+    
+    .percentage-badge {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* map section */
+
+/* Map Section Styles */
+.map-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    width: 100%;
+}
+
+.map-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.map-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.map-heading h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.map-heading p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive map container using aspect ratio technique */
+.map-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio for larger screens */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.location-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.address i, .phone i, .email i {
+    font-size: 20px;
+    color: #007bff;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.address p, .phone p, .email p {
+    font-size: 16px;
+    color: #444;
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.phone, .email {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .map-container {
+        padding-top: 60%; /* Slightly taller aspect ratio for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .map-section {
+        padding: 50px 0;
+    }
+    
+    .map-heading h2 {
+        font-size: 28px;
+    }
+    
+    .map-heading p {
+        font-size: 16px;
+    }
+    
+    .map-container {
+        padding-top: 75%; /* Taller aspect ratio for small screens */
+    }
+    
+    .location-details {
+        flex-direction: column;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+    }
+    
+    .phone, .email {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        padding-top: 100%; /* Square aspect ratio for very small screens */
+    }
+}

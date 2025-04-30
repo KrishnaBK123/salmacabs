@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #ffd200;
+    --secondary-color: #111;
+    --text-color: #fff;
+    --text-secondary: #777;
+    --accent-color: #ffd200;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff; /* White background */
+}
+
+/* Container for centering the form */
+.container {
+    width: 800px; /* Adjust width */
+    background-color: #fff; /* White container */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left panel styles */
+.left-panel {
+    flex: 1;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.logo-tagline {
+    font-size: 25px;
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+/* Right panel styles */
+.right-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container {
+    max-width: 300px;
+    margin: auto;
+}
+
+.login-title {
+    font-size: 28px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: block;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Register link */
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.register-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: var(--text-secondary);
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    margin-top: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .left-panel {
+        padding: 30px;
+    }
+
+    .right-panel {
+        padding: 30px;
+    }
+}

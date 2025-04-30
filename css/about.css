@@ -1,0 +1,429 @@
+
+
+
+
+
+/* header contact info */
+.contact-info1 {
+    /* display: flex; */
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    color: #FF9D00;
+    font-size: 24px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title {
+    color: #777;
+    font-size: 14px;
+}
+
+.contact-detail {
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* banner section */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height:500px;
+    overflow: hidden;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.6);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+
+
+
+.page-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 36px;
+    }
+    
+
+}
+
+/* why us section  */
+
+
+
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.why-choose-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: var(--text-color);
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle::before,
+.subtitle::after {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    background-color: var(--primary-color);
+    margin: 0 10px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+    line-height: 1.2;
+}
+
+.triangle-decoration {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+}
+
+.triangle-decoration .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 40px;
+    margin-bottom: 10px;
+}
+
+.triangle-decoration .triangle:first-child {
+    border-color: transparent transparent transparent var(--primary-color);
+}
+
+.triangle-decoration .triangle:last-child {
+    border-color: transparent transparent transparent rgba(255, 210, 0, 0.5);
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 15px 30px;
+    background-color: #eeeaea;
+    border: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    min-width: 180px;
+    text-align: center;
+}
+
+.tab:hover {
+    background-color: var(--tab-hover);
+}
+
+.tab.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: var(--primary-color) transparent transparent transparent;
+}
+
+.tab-circle {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: none;
+    z-index: 2;
+}
+
+.tab.active .tab-circle {
+    display: block;
+}
+
+.content-wrapper {
+    background-color: #F9F9F5;
+    padding: 60px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.content-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.content-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.content-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.content-text {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.feature-icon::before {
+    content: "✓";
+    color: var(--secondary-color);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.feature-text {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.taxi-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.discount-badge {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-color);
+    z-index: 10;
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 36px;
+    }
+    
+    .tabs-container {
+        flex-wrap: wrap;
+    }
+    
+    .tab {
+        min-width: 150px;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+    
+    .triangle-decoration {
+        display: none;
+    }
+    
+    .title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .content-wrapper {
+        padding: 30px 20px;
+    }
+    
+    .content-title {
+        font-size: 24px;
+    }
+    
+    .discount-badge {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tab {
+        min-width: 120px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .tab.active::after {
+        border-width: 15px 15px 0 15px;
+        bottom: -15px;
+    }
+    
+    .tab-circle {
+        width: 24px;
+        height: 24px;
+        bottom: -30px;
+    }
+    
+    .content-title {
+        font-size: 22px;
+    }
+    
+    .feature-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+.book-taxi-btn {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000;
+    transform: skewX(-10deg);
+    display: inline-block;
+  }
+
+  .book-taxi-btn i {
+    margin-right: 5px;
+  }
+
+  .book-taxi-btn:hover {
+    background-color: #000;
+    color: #ffc107;
+  }

@@ -1,0 +1,165 @@
+:root {
+  --primary-color: #ffd200;
+  --secondary-color: #111;
+  --text-color: #fff;
+  --text-secondary: #777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.header {
+  background: var(--secondary-color);
+  color: var(--text-color);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+width: 100px;
+height: 100px;
+object-fit: contain;
+margin-right: 0.5rem;
+}
+
+
+.brand h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.availability {
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.user-phone {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.nav-tabs-left {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab.active,
+.tab:hover {
+  color: var(--primary-color);
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.nav-tabs-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.nav-icon-btn:hover {
+  color: var(--primary-color);
+}
+
+.main-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.no-bookings {
+  color: var(--text-secondary);
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-tabs-left {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-tabs-right {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+}
