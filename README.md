@@ -1,42 +1,32 @@
-🚖 Salma Cabs Service
-Salma Cabs Service is a responsive and user-friendly cab booking web application built using HTML, CSS, JavaScript, and PHP. This project simulates a complete cab booking platform where users can register, book cabs, and manage their rides, while admins can monitor and manage bookings.
+🚖 Salma Cabs Service – Cab Booking Web Application
+Salma Cabs is a professional web application developed for a client to launch a cab booking service. It allows users to book cabs online by entering their pickup and drop locations, choosing vehicle types, and viewing estimated distance and fare. This project was built using HTML, CSS, JavaScript, and PHP.
 
-🔧 Technologies Used
-Frontend:
+🌐 Features
+User-friendly booking form with real-time validation
 
-HTML5
+Google Autocomplete API for selecting pickup and drop locations
 
-CSS3
+Google Distance Matrix API to calculate distance and duration between locations
 
-JavaScript (Vanilla JS)
+Fare estimation based on distance and selected cab type
 
-Backend:
+Responsive design for mobile and desktop users
 
-PHP
+Admin panel for managing bookings and cab details
 
-MySQL (for data storage)
+Booking summary with trip details
 
-✨ Features
-🚗 User Features
-User registration and login
+🧰 Technologies Used
+Frontend: HTML, CSS, JavaScript
 
-Book a cab (pickup & drop locations, date, time)
+Backend: PHP
 
-View booking history
+APIs:
 
-Cancel bookings
+Google Places Autocomplete API – to fetch and auto-suggest pickup and drop locations
 
-Responsive UI for desktop and mobile
-
-🛠️ Admin Features
-Admin login
-
-View all bookings
-
-Manage users and bookings
-
-Approve or reject cab requests
+Google Distance Matrix API – to calculate the travel distance and duration
 
 🙋‍♀️ Author
-Krishna 
-This project was developed by Krishna B Kuntabhimagol for a client looking to start a cab booking service business. It was built using HTML, CSS, JavaScript, and PHP to provide a complete web-based solution for managing cab bookings.
+Salma Cabs Team
+Developed by Krishna B Kuntabhimagol as a client project for launching a professional cab booking service. This project helped the client establish an online presence and manage cab operations efficiently.
