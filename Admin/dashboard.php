@@ -456,7 +456,7 @@ function applyFilters() {
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl5izG4jIpLhu9KF6fGznD0fEUdtvjpK8&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places"></script>
 
 <!-- Autocomplete place  -->
 <script>
@@ -496,13 +496,13 @@ function applyFilters() {
   import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 
   const firebaseConfig = {
-    apiKey: "AIzaSyDfKXl0T4iKi_ar6K1lvEghLmuAjitq3Tk",
-    authDomain: "otp-project-4792f.firebaseapp.com",
-    projectId: "otp-project-4792f",
-    storageBucket: "otp-project-4792f.firebasestorage.app",
-    messagingSenderId: "722844563831",
-    appId: "1:722844563831:web:79a3d4a494b97474038972",
-    measurementId: "G-JD6V4SQCMH"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
   };
 
   // Initialize Firebase
